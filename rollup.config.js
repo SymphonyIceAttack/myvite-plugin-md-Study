@@ -7,7 +7,7 @@ import { terser } from 'rollup-plugin-terser'
 import postcss from 'rollup-plugin-postcss'
 import serve from 'rollup-plugin-serve'
 import { defineConfig } from 'rollup';
-
+import json from "@rollup/plugin-json"
 export default defineConfig({
     input: './src/index.ts',//入口文件
     external: ['lodash'], //告诉rollup不要将此lodash打包，而作为外部依赖
@@ -34,6 +34,7 @@ export default defineConfig({
 
     ],
     plugins: [
+        json(),
         typescript(),
         pluginCommonjs(),
         pluginNodeResolve(),

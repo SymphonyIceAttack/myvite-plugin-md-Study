@@ -18,7 +18,7 @@
     }
   },
   "repository": {
-    "url": "https://github.com/SymphonyIceAttack/SymphonyIceAttackVitePluginTemplate"
+    "url": "https://github.com/SymphonyIceAttack/my-vite-plugin-md-studuy"
   },
   "scripts": {
     "build": "rollup --config",
@@ -26,6 +26,7 @@
     "test": "vitest",
     "watch": "vitest watch --coverage",
     "example:react": "cd examples/vite-react && yarn build",
+    "example:vue3": "cd examples/vite-vue3 && yarn  dev",
     "prepublishOnly": "yarn run build",
     "release": "npx bumpp --push --tag --commit && yarn publish"
   },
@@ -39,11 +40,13 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
     "@rollup/plugin-commonjs": "^23.0.0",
+    "@rollup/plugin-json": "^5.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@rollup/plugin-typescript": "^9.0.1",
     "@types/node": "^18.11.0",
     "loadsh": "^0.0.4",
     "lodash": "^4.17.21",
+    "markdown-it": "^13.0.1",
     "postcss": "^8.4.18",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-livereload": "^2.0.5",
